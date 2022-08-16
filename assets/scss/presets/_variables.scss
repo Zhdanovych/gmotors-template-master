@@ -1,4 +1,15 @@
-$ul: 1280px;
-$lg: 992px;
+$ul: 1360px;
+$lg: 1280px;
+$md: 992px;
+$sm: 768px;
+$xs: 576px;
 
 $gap: 20px;
+$gap-sm: $gap * 0.5;
+$gap-lg: $gap * 2;
+$gap-md: $gap * 1.5;
+
+$font-size: 18px;
+$font-primary: 'Montserrat', sans-serif;
+
+$mobile-menu-size: 170px;

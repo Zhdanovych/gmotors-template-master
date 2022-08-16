@@ -1,0 +1,121 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.footer {
+  padding-top: $gap;
+  background-color: $color-white;
+  &__container {
+    @extend %container;
+  }
+  &__separator {
+    border: 2px solid $color-white;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @include md-min {
+    align-items: flex-start;
+    padding-top: $gap-md;
+    padding-bottom: $gap;
+    }
+    @include md {
+      padding-top: $gap;
+      padding-bottom: 100px;
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+  &__wrap {
+    display: flex;
+    
+    padding-bottom: $gap;
+    @include md-min {
+      align-items: center;
+      gap: $gap-md;
+    }
+    @include md {
+      flex-direction: column;
+      align-items: center;
+      gap: $gap-sm;
+    }
+  }
+  &__contacts-adress {
+    position: relative;
+    font-weight: 500;
+    color: $color-white;
+    @include md-min {
+      margin-right: $gap;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        right: -40px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-white;
+      }
+    }
+  }
+  &__contacts-map {
+    color: $color-white$color-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    @include md-min {
+      margin-left: $gap;
+    }
+  }
+  &__contacts-fb {
+    position: relative;
+    @include md-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 17px;
+        right: -18px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-white;
+      }
+    }
+    &-img {
+      color: $color-white;
+      &:hover {
+        transition: 1s;
+        color: $color-white;
+      }
+    }
+  }
+  &__contacts-phone {
+    position: relative;
+    font-weight: 500;
+    color: $color-white;
+    @include md-min {
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        right: -20px;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $color-white;
+      }
+    }
+  }
+  &__contacts-mail {
+    font-weight: 700;
+    color: $color-white;
+  }
+  &__copy {
+    color: $color-white;
+    @include md {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,158 @@
+@use "../../../presets/index" as *;
+@use "../../../mixins/index" as *;
+
+.services {
+  position: relative;
+
+  border-radius: 0 0 12px 12px;
+  background: linear-gradient($color-darkgreen);
+
+  @include lg-min {
+    padding-bottom: 100px;
+  }
+  @include lg-sm {
+    padding-bottom: 50px;
+  }
+  @include sm {
+    padding-bottom: $gap;
+  }
+
+  &::before {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    left: 20px;
+
+    height: 20px;
+
+    content: "";
+
+    border-radius: 0 0 12px 12px;
+    background-color: $color-darkgreen-border;
+  }
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    left: 10px;
+
+    height: 10px;
+
+    content: "";
+
+    border-radius: 0 0 12px 12px;
+    background-color: $color-white;
+  }
+
+  &__container {
+    @extend %container;
+  }
+
+  &__page-link {
+    position: relative;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: rgba($color-white, 0.5);
+
+    font-size: 14px;
+    &::after {
+      position: absolute;
+      right: -20px;
+      bottom: 2px;
+
+      width: 15px;
+      height: 12px;
+
+      content: "";
+      color: rgba($color-white, 0.5);
+
+      background-image: url(../img/arrow2.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__grid {
+    display: grid;
+
+    gap: 40px;
+    @include lg-min {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include lg-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__title {
+
+    @include md-min {
+      width: max-content;
+    }
+    @include sm-min {
+      margin-bottom: 60px;
+
+      font-size: 42px;
+    }
+    @include sm {
+      margin-bottom: 40px;
+
+      font-size: 32px;
+    }
+  }
+}
+
+.service-item {
+  display: grid;
+
+  gap: 10px;
+  grid-template-rows: auto auto 1fr;
+  @include lg {
+    grid-template-columns: auto 1fr;
+  }
+
+  &__image {
+    @include sm-min {
+      align-items: center;
+      width: 92px;
+      height: 92px;
+    }
+    @include sm {
+      width: 65px;
+      height: 65px;
+    }
+  }
+
+  &__title > a {
+    align-self: center;
+
+    color: $color-white;
+
+    font-weight: 500;
+    &:hover {
+      color: $color-white;
+    }
+
+    @include sm-min {
+      font-size: 24px;
+    }
+    @include sm {
+      font-size: 18px;
+    }
+  }
+
+  &__description {
+    color: $color-white;
+
+    line-height: 1.44;
+
+    @include sm-min {
+      font-size: 18px;
+    }
+    @include lg {
+      grid-column: 1 / span 3;
+    }
+  }
+}
