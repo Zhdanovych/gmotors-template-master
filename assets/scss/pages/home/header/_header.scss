@@ -1,2 +1,66 @@
 @use "../../../presets/index" as *;
 @use "../../../mixins/index" as *;
+
+.header {
+ 
+}
+.header-content {
+ min-height: 605px;
+ background-image: url(../img/bgcar.png);
+ background-repeat: no-repeat;
+ background-size: contain;
+ &__wrapper {
+  display: flex;
+ flex-direction: column;
+ row-gap: $gap-lg;
+ padding-top: 150px;
+ padding-left: 170px;
+ max-width: 750px;
+ @include ul-lg {
+  padding-top: 100px;
+  padding-left: 130px;
+ }
+ @include lg-md {
+  padding-top: 70px;
+  padding-left: 100px;
+ }
+ @include md {
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 40px;
+ }
+ @include xs{
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 25px;
+  margin-top: 5px;
+  row-gap: $gap-sm;
+ }
+ }
+ &__title {
+  font-weight: 700;
+  font-size: 66px;
+  max-width: 672px;
+  margin: 0;
+  @include md-sm {
+    font-size: 50px;
+  }
+  @include sm-xs {
+    font-size: 40px;
+  }
+  @include xs {
+    max-width: 200px;
+    font-size: 25px;
+  }
+ }
+ &__actions {
+  display: flex;
+  column-gap: 60px;
+  @include md-xs {
+    column-gap: 30px;
+  }
+  @include xs {
+    column-gap: 10px;
+  }
+ }
+}
