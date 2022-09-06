@@ -6,142 +6,69 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Gmotors</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/img/logog.png" rel="icon">
 </head>
 
 <body>
-
-  <header class="header">
-    <div class="menu">
-      <div class="menu-logo">
-        <img class="menu-logo__img" src="assets/img/logog.png" alt="logo">
-      </div>
-      <div class="menu-nav__humburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="menu-nav">
-        <a class="menu-nav__item" href="">Контакти</a>
-        <a class="menu-nav__item" href="">Карта</a>
-        <a class="menu-nav__item" href="">Топ 10</a>
-        <a class="menu-nav__item" href="">Доставка</a>
-        <a class="menu-nav__item" href="">Про нас</a>
-      </nav>
-      <div class="menu-nav__btn">
-        <button class="btn-green" type="button">Придбати зараз</button>
-      </div>
-    </div>
-    <div class="header-content">
-      <div class="header-content__wrapper">
-        <h1 class="header-content__title"><span>Електрички</span> з Китаю під ключ</h1>
-        <div class="header-content__actions">
-          <button class="btn-black" type="button">Придбати зараз</button>
-          <a class="btn-link" href="">Докладніше</a>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logog.png" alt="" width="150" height="75">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#">Про нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Доставка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Топ 10</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Карта</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Контакти</a>
+            </li>
+          </ul>
+          <a href="tel:+380959483349" class="btn btn-warning text-white btn-green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-telephone-outbound" viewBox="0 0 16 16">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+            </svg>
+            +380959483349</a>
         </div>
       </div>
+    </nav>
+    <div class="container-fluid col-xxl-8 px-4 py-5 bgimage">
+      <div class="row flex-lg-row align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-2 text-dark"><strong>Електрички</strong> з Китаю під ключ</h1>
+          <p class="lead">Ми готові запропонувати Вам 700+ позицій автомобілів як китайських брендів, так і
+            світових (HONDA, VW, TOYOTA, VOLVO, BMW та ін.). Ми працюємо безпосередньо з
+            заводами-виробниками та готові запропонувати Вам найкращі умови по
+            співробітництву.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Залишити заявку</button>
+            <a href="#" class="btn btn-outline-secondary btn-lg px-4">Докладніше</a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </header>
-
-  <!-- <main class="page-main">
-    <section class="services">
-      <div class="services__container">
-        <div>
-          <strong><a class="services__page-link" href="">послуги</a></strong>
-        </div>
-        <h2 class="services__title">Що ми вміємо робити краще за інших?</h2>
-        <div class="services__grid">
-          <div class="service-item">
-            <div class="service-item__icon"><img alt="icon" class="service-item__image" src="assets/img/icon1.svg">
-            </div>
-            <h3 class="service-item__title"><a href="">IT та електронна комерція</a></h3>
-            <div class="service-item__description">
-              Нескінчений потік договорів, податкові питання, трудові відносини, корпоративні папери — юридична робота
-              відволікає вас від ведення бізнесу. Але роботи не так вже й багато, щоб наймати інхауз-юриста.
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item__icon"><img alt="icon" class="service-item__image" src="assets/img/icon2.svg">
-            </div>
-            <h3 class="service-item__title"><a href="">Комплексний щоденний юридичний супровід</a></h3>
-            <div class="service-item__description">
-              До того ж, з часом робота стане однотипною і нецікавою для штатного юриста. А ще ми добре знаємо, як важко
-              в
-              Україні знайти хорошого кандидата з досвідом у сфері інформаційних технологій.
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item__icon"><img alt="icon" class="service-item__image" src="assets/img/icon3.svg">
-            </div>
-            <h3 class="service-item__title"><a href="">Структуризація корпоративних відносин</a></h3>
-            <div class="service-item__description">
-              Замість просто надавати юридичні послуги, ми закріпимо юриста або цілу команду, які впишуться в
-              повсякденне
-              життя вашої компанії.
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item__icon"><img alt="icon" class="service-item__image" src="assets/img/icon4.svg">
-            </div>
-            <h3 class="service-item__title"><a href="">Побудовa договірних відносин</a></h3>
-            <div class="service-item__description">
-              Раз на тиждень, чи тиждень на місяць у вас під боком є ваш власний юрист. Будь-хто в компанії може
-              впіймати
-              його біля кавоварки і просто поговорити про поточні справи замість очікування статусу update.
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item__icon"><img alt="icon" class="service-item__image" src="assets/img/icon5.svg">
-            </div>
-            <h3 class="service-item__title"><a href="">Захист бізнесу, інтелектуальної власності</a></h3>
-            <div class="service-item__description">
-              А весь інший час він працюватиме над новими різноплановими проектами, тому вже точно не зупиниться в
-              професійному розвитку. Так чи інакше, на вас працюватиме весь Axon Partners замість корпоративного юриста.
-            </div>
-          </div>
-          <div class="service-item">
-            <div class="service-item__icon"><img alt="icon" class="service-item__image" src="assets/img/icon6.svg">
-            </div>
-            <h3 class="service-item__title"><a href="">Судове представництво</a></h3>
-            <div class="service-item__description">
-              Невелика компанія, середнього розміру, чи вже лідер ринку? Локальний бізнес або транснаціональна компанія?
-              Маєте власний юридичний відділ, чи ні?
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__separator"></div>
-      <div class="footer__content">
-        <div class="footer__contacts">
-          <div class="footer__wrap">
-            <a class="footer__contacts-adress" href="">Одеса, Адміральський пр., 3</a>
-            <a class="footer__contacts-map" href="https://goo.gl/maps/QwnXL4AjgKaut7Db9" target="_blank">Подивитися на
-              мапі</a>
-          </div>
-          <div class="footer__wrap">
-            <a class="footer__contacts-fb" href=""><svg class="footer__contacts-fb-img"
-                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="38" height="38">
-                <path
-                  d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                  fill="currentColor"></path>
-              </svg></a>
-            <a class="footer__contacts-phone" href="tel:+380503901591">+38 (050) 390 15 91</a>
-            <a class="footer__contacts-mail" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
-          </div>
-
-        </div>
-        <div class="footer__copy">© 2021 ТОВ Юридична компанія «HLEGALS»</div>
-      </div>
-    </div>
-  </footer> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
