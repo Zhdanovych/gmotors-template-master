@@ -398,3 +398,8 @@ strong {
   background-color: #559b15 !important;
   border-color: #559b15 !important;
 }
+.bgabout {
+  background-image: url(../img/bgabout1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
