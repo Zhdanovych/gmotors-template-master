@@ -59,7 +59,45 @@
             заводами-виробниками та готові запропонувати Вам найкращі умови по
             співробітництву.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Залишити заявку</button>
+            <button type="button" class="btn btn-success btn-lg px-4 me-md-2" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">Залишити заявку</button>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Форма заявки</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label text-success">Ім'я</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Ваше Ім'я">
+                      </div>
+                      <div class="col-12">
+                        <div class="form-floating">
+                          <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                          <label for="floatingTextarea2">Що вас цікавить?</label>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputCity" class="form-label text-success">Email</label>
+                        <input type="email" class="form-control" id="inputCity" placeholder="Ваш Email">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="inputZip" class="form-label text-success">Телефон</label>
+                        <input type="tel" class="form-control" id="inputZip" placeholder="Ваш телефон">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Скасувати</button>
+                    <button type="button" class="btn btn-success">Відправити заявку</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             <a href="#" class="btn btn-outline-secondary btn-lg px-4">Докладніше</a>
           </div>
         </div>
