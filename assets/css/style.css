@@ -408,3 +408,14 @@ strong {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.map {
+  background-color: #f8f9fa;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+}
+.bgcarousel {
+  background-color: #f8f9fa;
+}
