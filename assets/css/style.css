@@ -341,7 +341,7 @@ a {
 }
 
 span {
-  color: #559b15;
+  color: #000000;
 }
 
 @font-face {
@@ -418,4 +418,10 @@ iframe {
 }
 .bgcarousel {
   background-color: #f8f9fa;
+}
+.bgfooter {
+  background-image: url(../img/bgabout.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100px;
 }
